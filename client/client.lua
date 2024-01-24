@@ -254,6 +254,7 @@ RegisterNetEvent("CL-Pizzeria:Drink", function(item, ischampagne, itemname, anim
 			model = model,
 			bone = bones,
 			coords = { x=coords.x, y=coords.y, z=coords.z },
+			rotation = { x = 0.0, y = 0.0, z = 0.0 },
 		}, {}, function()
 			QBCore.Functions.Notify("You Have Drank " ..itemname, "success")
 			if Config.ConsumablesVersion == "old" then
@@ -419,6 +420,7 @@ RegisterNetEvent("CL-Pizzeria:Eat", function(fruit, item, itemname, time, hunger
 			model = model,
 			bone = bones,
 			coords = { x=coords.x, y=coords.y, z=coords.z },
+			rotation = { x = 0.0, y = 0.0, z = 0.0 },
 		}, {}, function()
 			QBCore.Functions.Notify("You eated " ..itemname, "success")
 			TriggerServerEvent("CL-Pizzeria:RemoveItem", item, 1)
