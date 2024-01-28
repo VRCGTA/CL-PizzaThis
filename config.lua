@@ -6,7 +6,7 @@ Config.UseBlips = true -- Set to false to disable blips
 
 Config.MaxInventoryWeight = 120000 -- Set that to your max inventory weight, by defualt 120000
 
-Config.PolyZone = false -- Set to true to activate polygon zones
+Config.PolyZone = true -- Set to true to activate polygon zones
 
 Config.ConsumablesVersion = "new" -- Not sure if its got updated buut i noticed that QBCore:Server:SetMetaData isnt working anymore, If you still want to use this event change it to : "old"
 
@@ -101,17 +101,17 @@ Config.Locations = {
     },
     
     Shop = {
-        Coords = vector3(812.14477, -755.5136, 26.463903),
+        Coords = vector3(812.14477, -755.5136, 25.9),
         Heading = 180.11533,
-        minZ = 25.263903,
-        maxZ = 26.63333,
+        minZ = 25.2,
+        maxZ = 26.1,
     },
 
     Stash = {
-        Coords = vector3(811.46392, -751.2053, 26.463903),
+        Coords = vector3(811.46392, -751.2053, 26.2),
         Heading = 90.118133,
-        minZ = 25.263903,
-        maxZ = 26.63333,
+        minZ = 25.0,
+        maxZ = 26.3,
     },
 
     Bossmenu = {
@@ -122,10 +122,10 @@ Config.Locations = {
     },
 
     Glasses = {
-        Coords = vector3(813.85162, -751.1357, 26.881879),
+        Coords = vector3(813.85162, -751.1357, 26.2),
         Heading = 269.55291,
-        minZ = 25.881879,
-        maxZ = 27.881879,
+        minZ = 25.2,
+        maxZ = 27.2,
     },
 
     DrinksMachine = {
@@ -157,31 +157,31 @@ Config.Locations = {
     },
 
     GrabWater = {
-        Coords = vector3(799.15822, -758.6823, 30.792514),
+        Coords = vector3(799.15822, -758.6823, 30.3),
         Heading = 0.0698692,
-        minZ = 29.792514,
-        maxZ = 31.792514,
+        minZ = 29.3,
+        maxZ = 31.3,
     },
 
     GrabCoffee = {
-        Coords = vector3(800.29453, -758.665, 30.792514),
+        Coords = vector3(800.29453, -758.665, 30.5),
         Heading = 0.0698692,
-        minZ = 29.792514,
-        maxZ = 31.792514,
+        minZ = 29.5,
+        maxZ = 31.5,
     },
 
     Fruits = {
-        Coords = vector3(802.79199, -761.087, 31.232946),
+        Coords = vector3(802.79199, -761.087, 30.6),
         Heading = 266.65414,
-        minZ = 30.232946,
-        maxZ = 32.232946,
+        minZ = 29.5,
+        maxZ = 31.0,
     },
 
     Fridge = {
-        Coords = vector3(799.77284, -758.8344, 30.792514),
+        Coords = vector3(799.77284, -758.8344, 30.6),
         Heading = 0.0698692,
-        minZ = 29.792514,
-        maxZ = 32.092514,
+        minZ = 29.6,
+        maxZ = 32.0,
     },
 
     Duty = {
@@ -199,38 +199,38 @@ Config.Locations = {
     },
 
     PersonalStash = {
-        Coords = vector3(811.37243, -764.3569, 31.265888),
+        Coords = vector3(811.37243, -764.3569, 30.5),
         Heading = 272.32495,
-        minZ = 30.265886,
+        minZ = 29.8,
         maxZ = 32.265886,
     },
 
     DoughMachine = {
-        Coords = vector3(806.12829, -757.4082, 27.458053),
+        Coords = vector3(806.12829, -757.4082, 25.8),
         Heading = 46.859565,
-        minZ = 26.033151,
-        maxZ = 27.633151,
+        minZ = 24.3,
+        maxZ = 26.3,
     },
 
     DoughPrepare = {
-        Coords = vector3(807.66705, -756.9855, 27.458053),
+        Coords = vector3(807.66705, -756.9855, 25.7),
         Heading = 359.9,
-        minZ = 26.033151,
-        maxZ = 27.033151,
+        minZ = 24.5,
+        maxZ = 26.5,
     },
 
     CoffeeCups = {
-        Coords = vector3(811.41735, -764.5887, 28.06981),
+        Coords = vector3(811.41735, -764.5887, 27.5),
         Heading = 271.41192,
-        minZ = 27.56981,
-        maxZ = 28.17981,
+        minZ = 26.8,
+        maxZ = 27.5,
     },
 
     FoodFridge = {
-        Coords = vector3(805.59539, -761.7076, 26.780834),
+        Coords = vector3(805.59539, -761.7076, 26.2),
         Heading = 90.636985,
-        minZ = 25.780834,
-        maxZ = 27.780834,
+        minZ = 25.2,
+        maxZ = 27.2,
     },
 
     CoffeeMachine = {
@@ -255,17 +255,17 @@ Config.Locations = {
     },
 
     MakePasta = {
-        Coords = vector3(808.33131, -760.2289, 26.703075),
+        Coords = vector3(808.33131, -760.2289, 26.0),
         Heading = 180.30313,
-        minZ = 25.703075,
-        maxZ = 27.703075,
+        minZ = 25.0,
+        maxZ = 27.0,
     },
 
     PizzaOven = {
-        Coords = vector3(813.95566, -752.9314, 27.080839),
+        Coords = vector3(813.95566, -752.9314, 26.7),
         Heading = 270.20068,
-        minZ = 26.780839,
-        maxZ = 27.780839,
+        minZ = 26.4,
+        maxZ = 27.4,
     },
 
     PizzaAddons = {
@@ -277,30 +277,30 @@ Config.Locations = {
 
     WashHands = {
         [1] = {
-            ['coords'] = vector3(813.39843, -755.5438, 26.630836),
+            ['coords'] = vector3(813.39843, -755.5438, 25.9),
             ['heading'] = 180.11533,
-            ['minZ'] = 25.630836,
-            ['maxZ'] = 27.630836,
+            ['minZ'] = 24.9,
+            ['maxZ'] = 26.9,
             ['poly1'] = 0.5,
             ['poly2'] = 0.5,
         },
-        [2] = {
-            ['coords'] = vector3(801.58837, -758.7001, 31.23454),
+        [2] = { -- 2F
+            ['coords'] = vector3(801.58837, -758.7001, 30.8),
             ['heading'] = 0.0698692,
-            ['minZ'] = 30.23454,
-            ['maxZ'] = 32.23454,
+            ['minZ'] = 30.3,
+            ['maxZ'] = 31.3,
             ['poly1'] = 0.5,
             ['poly2'] = 0.5,
         },
-        [3] = {
-            ['coords'] = vector3(809.26147, -760.0004, 26.703075),
+        [3] = { --kitchen 1
+            ['coords'] = vector3(809.26147, -760.0004, 26.0),
             ['heading'] = 89.754257,
-            ['minZ'] = 25.703075,
-            ['maxZ'] = 27.703075,
+            ['minZ'] = 25.0,
+            ['maxZ'] = 27.0,
             ['poly1'] = 0.5,
             ['poly2'] = 0.5,
         },
-        [4] = {
+        [4] = { --kitchen 2
             ['coords'] = vector3(809.33148, -765.1442, 25.820392),
             ['heading'] = 176.30313,
             ['minZ'] = 24.820392,
@@ -308,16 +308,16 @@ Config.Locations = {
             ['poly1'] = 0.5,
             ['poly2'] = 0.5,
         },
-        [5] = {
-            ['coords'] = vector3(809.90405, -765.3858, 30.946973),
+        [5] = { --Locker
+            ['coords'] = vector3(809.90405, -765.3858, 30.2),
             ['heading'] = 179.24341,
             ['minZ'] = 29.946973,
             ['maxZ'] = 31.946973,
             ['poly1'] = 0.5,
             ['poly2'] = 0.5,
         },
-        [6] = {
-            ['coords'] = vector3(808.90405, -765.3858, 30.946973),
+        [6] = { --Locker
+            ['coords'] = vector3(808.90405, -765.3858, 30.2),
             ['heading'] = 179.24341,
             ['minZ'] = 29.946973,
             ['maxZ'] = 31.946973,
@@ -328,25 +328,25 @@ Config.Locations = {
 
     Lockers = {
         [1] = {
-            ['coords'] = vector3(808.77343, -758.2884, 31.265886),
+            ['coords'] = vector3(808.77343, -758.2884, 30.5),
             ['heading'] = 358.58792,
-            ['minZ'] = 30.265886,
+            ['minZ'] = 30.0,
             ['maxZ'] = 32.265886,
             ['poly1'] = 0.6,
             ['poly2'] = 2.8,
         },
         [2] = {
-            ['coords'] = vector3(812.17712, -758.299, 31.265886),
+            ['coords'] = vector3(812.17712, -758.299, 30.5),
             ['heading'] = 358.58792,
-            ['minZ'] = 30.265886,
+            ['minZ'] = 30.0,
             ['maxZ'] = 32.265886,
             ['poly1'] = 0.6,
             ['poly2'] = 2.8,
         },
         [3] = {
-            ['coords'] = vector3(812.83053, -762.8221, 31.265886),
+            ['coords'] = vector3(812.83053, -762.8221, 30.5),
             ['heading'] = 358.58792,
-            ['minZ'] = 30.265886,
+            ['minZ'] = 30.0,
             ['maxZ'] = 32.265886,
             ['poly1'] = 0.6,
             ['poly2'] = 2.0,
@@ -355,18 +355,18 @@ Config.Locations = {
 
     WineRacks = {
         [1] = {
-            ['coords'] = vector3(809.37055, -761.8726, 23.163036),
+            ['coords'] = vector3(809.37055, -761.8726, 21),
             ['heading'] = 180.30313,
-            ['minZ'] = 21.163036,
-            ['maxZ'] = 22.663036,
+            ['minZ'] = 20,
+            ['maxZ'] = 22,
             ['poly1'] = 0.6,
             ['poly2'] = 1.9,
         },
         [2] = {
-            ['coords'] = vector3(807.26055, -761.8726, 23.163036),
+            ['coords'] = vector3(807.26055, -761.8726, 21),
             ['heading'] = 180.30313,
-            ['minZ'] = 21.163036,
-            ['maxZ'] = 22.663036,
+            ['minZ'] = 20,
+            ['maxZ'] = 22,
             ['poly1'] = 0.6,
             ['poly2'] = 1.9,
         },
