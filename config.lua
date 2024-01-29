@@ -6,7 +6,7 @@ Config.UseBlips = true -- Set to false to disable blips
 
 Config.MaxInventoryWeight = 120000 -- Set that to your max inventory weight, by defualt 120000
 
-Config.PolyZone = true -- Set to true to activate polygon zones
+Config.PolyZone = false -- Set to true to activate polygon zones
 
 Config.ConsumablesVersion = "new" -- Not sure if its got updated buut i noticed that QBCore:Server:SetMetaData isnt working anymore, If you still want to use this event change it to : "old"
 
@@ -47,14 +47,14 @@ Config.Hunger = {
     Banana = 6,
     Apple = 4,
     Orange = 5,
-    PizzaMargharita = 25,
-    PizzaNapollitano = 25,
-    PizzaFungi = 25,
-    PizzaSeafood = 25,
-    VegetarianPizza = 10,
-    MacNCheese = 15,
-    BBQPorkMac = 15,
-    PastaFresca = 15,
+    PizzaMargharita = 60,
+    PizzaNapollitano = 60,
+    PizzaFungi = 60,
+    PizzaSeafood = 60,
+    VegetarianPizza = 60,
+    MacNCheese = 30,
+    BBQPorkMac = 30,
+    PastaFresca = 50,
 }
 
 --Vehicles, you can add as many as you like.
