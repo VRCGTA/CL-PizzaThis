@@ -60,32 +60,32 @@ end)
 ----------------
 ----Garage Marker
 ----------------
-CreateThread(function()
-    while true do
-        local plyPed = PlayerPedId()
-        local plyCoords = GetEntityCoords(plyPed)
-        local letSleep = true        
+-- CreateThread(function()
+--     while true do
+--         local plyPed = PlayerPedId()
+--         local plyCoords = GetEntityCoords(plyPed)
+--         local letSleep = true        
 
-        if PlayerJob.name == Config.Job then
-            if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, true) < Config.MarkerDistance) then
-                letSleep = false
-                DrawMarker(36, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z + 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.7, 0.5, 0.5, 162, 33, 36, 255, true, false, false, true, false, false, false)
-                 if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, true) < 1.5) then
-                    DrawText3D(Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, "~g~E~w~ - Pizzeria Garage") 
-                    if IsControlJustReleased(0, 38) then
-                        TriggerEvent("CL-Pizzeria:Garage:Menu")
-                    end
-                end  
-            end
-        end
+--         if PlayerJob.name == Config.Job then
+--             if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, true) < Config.MarkerDistance) then
+--                 letSleep = false
+--                 DrawMarker(36, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z + 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.7, 0.5, 0.5, 162, 33, 36, 255, true, false, false, true, false, false, false)
+--                  if (GetDistanceBetweenCoords(plyCoords.x, plyCoords.y, plyCoords.z, Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, true) < 1.5) then
+--                     DrawText3D(Config.Locations["Garage"]["Marker"].x, Config.Locations["Garage"]["Marker"].y, Config.Locations["Garage"]["Marker"].z, "~g~E~w~ - Pizzeria Garage") 
+--                     if IsControlJustReleased(0, 38) then
+--                         TriggerEvent("CL-Pizzeria:Garage:Menu")
+--                     end
+--                 end  
+--             end
+--         end
 
-        if letSleep then
-            Wait(2000)
-        end
+--         if letSleep then
+--             Wait(2000)
+--         end
 
-        Wait(1)
-    end
-end)
+--         Wait(1)
+--     end
+-- end)
 
 ----------------
 ----Events
