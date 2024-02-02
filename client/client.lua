@@ -450,7 +450,7 @@ RegisterNetEvent("CL-Pizzeria:Eat", function(fruit, item, itemname, time, hunger
 			if Config.ConsumablesVersion == "old" then
 				TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
 			elseif Config.ConsumablesVersion == "new" then
-				TriggerServerEvent("CL-Pizzeria:AddHunger", hunger)
+				TriggerServerEvent("CL-Pizzeria:AddHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
 			end
 		end, function()
 			QBCore.Functions.Notify("Canceled...", "error")
@@ -951,27 +951,27 @@ Citizen.CreateThread(function()
 		distance = 1.5,
 	})
 
-	for k, v in pairs(Config.Locations["Trays"]) do
-        exports[Config.Target]:AddBoxZone("Tray"..k, vector3(v.coords.x, v.coords.y, v.coords.z), v.poly1, v.poly2, {
-            name = "Tray"..k,
-            heading = v.heading,
-            debugPoly = Config.PolyZone,
-            minZ = v.minZ,
-            maxZ = v.maxZ,
-            }, {
-                options = { 
-                {
-					icon = Config.Locals['Targets']['Tray']['Icon'],
-					label = Config.Locals['Targets']['Tray']['Label'],
-					action = function()
-						TriggerServerEvent("inventory:server:OpenInventory", "stash", "PizzaThis "..k.." Tray", {maxweight = 30000, slots = 10})
-						TriggerEvent("inventory:client:SetCurrentStash", "PizzaThis "..k.." Tray") 
-					end,
-                }
-            },
-            distance = 1.2,
-        })
-    end
+	-- for k, v in pairs(Config.Locations["Trays"]) do
+    --     exports[Config.Target]:AddBoxZone("Tray"..k, vector3(v.coords.x, v.coords.y, v.coords.z), v.poly1, v.poly2, {
+    --         name = "Tray"..k,
+    --         heading = v.heading,
+    --         debugPoly = Config.PolyZone,
+    --         minZ = v.minZ,
+    --         maxZ = v.maxZ,
+    --         }, {
+    --             options = { 
+    --             {
+	-- 				icon = Config.Locals['Targets']['Tray']['Icon'],
+	-- 				label = Config.Locals['Targets']['Tray']['Label'],
+	-- 				action = function()
+	-- 					TriggerServerEvent("inventory:server:OpenInventory", "stash", "PizzaThis "..k.." Tray", {maxweight = 30000, slots = 10})
+	-- 					TriggerEvent("inventory:client:SetCurrentStash", "PizzaThis "..k.." Tray") 
+	-- 				end,
+    --             }
+    --         },
+    --         distance = 1.2,
+    --     })
+    -- end
 
 	exports[Config.Target]:AddBoxZone("MakePizza", vector3(Config.Locations["MakePizza"]["Coords"].x, Config.Locations["MakePizza"]["Coords"].y, Config.Locations["MakePizza"]["Coords"].z), 0.4, 0.4, {
 		name = "MakePizza",
