@@ -44,19 +44,19 @@ Config.Thirst = {
     Sprite = 7 * multiplier,
 }
 
-Config.Hunger = {
-    Banana = 6,
-    Apple = 4,
-    Orange = 5,
-    PizzaMargharita = 60,
-    PizzaNapollitano = 60,
-    PizzaFungi = 60,
-    PizzaSeafood = 60,
-    VegetarianPizza = 60,
-    MacNCheese = 30,
-    BBQPorkMac = 30,
-    PastaFresca = 50,
-}
+-- Config.Hunger = {
+--     Banana = 6,
+--     Apple = 4,
+--     Orange = 5,
+--     PizzaMargharita = 60,
+--     PizzaNapollitano = 60,
+--     PizzaFungi = 60,
+--     PizzaSeafood = 60,
+--     VegetarianPizza = 60,
+--     MacNCheese = 30,
+--     BBQPorkMac = 30,
+--     PastaFresca = 50,
+-- }
 
 --Vehicles, you can add as many as you like.
 Config.Vehicles = {
