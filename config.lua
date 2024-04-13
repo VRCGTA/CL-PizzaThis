@@ -1097,7 +1097,7 @@ Config.FoodFridgeItems = {
     items = {
         [1] = {
             name = "pmilk",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1105,7 +1105,7 @@ Config.FoodFridgeItems = {
         },
         [2] = {
             name = "pcoffeebeans",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1113,7 +1113,7 @@ Config.FoodFridgeItems = {
         },
         [3] = {
             name = "pcream",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1121,7 +1121,7 @@ Config.FoodFridgeItems = {
         },
         [4] = {
             name = "pcaramelsyrup",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1129,7 +1129,7 @@ Config.FoodFridgeItems = {
         },
         [5] = {
             name = "ptomatosouce",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1137,7 +1137,7 @@ Config.FoodFridgeItems = {
         },
         [6] = {
             name = "pmozzarella",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1145,7 +1145,7 @@ Config.FoodFridgeItems = {
         },
         [7] = {
             name = "pbutter",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1153,7 +1153,7 @@ Config.FoodFridgeItems = {
         },
         [8] = {
             name = "pvegicheese",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1161,7 +1161,7 @@ Config.FoodFridgeItems = {
         },
         [9] = {
             name = "pelbowmacaroni",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1169,7 +1169,7 @@ Config.FoodFridgeItems = {
         },
         [10] = {
             name = "pcheddarcheese",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1177,7 +1177,7 @@ Config.FoodFridgeItems = {
         },
         [11] = {
             name = "pparmesancheese",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1185,7 +1185,7 @@ Config.FoodFridgeItems = {
         },
         [12] = {
             name = "pporkmeat",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1193,7 +1193,7 @@ Config.FoodFridgeItems = {
         },
         [13] = {
             name = "pbbqsouce",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1201,7 +1201,7 @@ Config.FoodFridgeItems = {
         },
         [14] = {
             name = "pregularpasta",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1216,7 +1216,7 @@ Config.PizzaExtrasItems = {
     items = {
         [1] = {
             name = "pbasil",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1224,7 +1224,7 @@ Config.PizzaExtrasItems = {
         },
         [2] = {
             name = "pmushrooms",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1232,7 +1232,7 @@ Config.PizzaExtrasItems = {
         },
         [3] = {
             name = "pseafoodmix",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
@@ -1240,7 +1240,7 @@ Config.PizzaExtrasItems = {
         },
         [4] = {
             name = "ptomatoes",
-            price = 5,
+            price = 0,
             amount = 100,
             info = {},
             type = "item",
