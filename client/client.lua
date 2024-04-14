@@ -1088,7 +1088,7 @@ RegisterNetEvent("CL-Pizzeria:Catalog", function()
     for k, v in pairs(Config.Vehicles) do
         VehicleMenu[#VehicleMenu+1] = {
             header = v.vehiclename,
-            txt = "Rent: " .. v.vehiclename .. " For: " .. v.price .. "$",
+            txt = "Rent: " .. v.vehiclename .. " For: " .. v.price .. "𝕍",
             params = {
                 isServer = true,
                 event = "CL-Pizzeria:TakeMoney",
@@ -1145,7 +1145,7 @@ RegisterNetEvent("CL-Pizzeria:GlassesMenu", function()
 			for k, v in pairs(Config.Items["Glasses"]) do
 				GlassesMenu[#GlassesMenu+1] = {
 					header = v.image.." ┇ " ..v.glassname,
-					txt = "Buy " .. v.glassname .. " For: " .. v.price .. "$",
+					txt = "Buy " .. v.glassname .. " For: " .. v.price .. "𝕍",
 					params = {
 						isServer = true,
 						event = "CL-Pizzeria:BuyGlass",
@@ -1495,7 +1495,7 @@ RegisterNetEvent("CL-Pizzeria:CoffeeCupsMenu", function()
 			for k, v in pairs(Config.Items["CoffeeCups"]) do
 				CoffeeCupsMenu[#CoffeeCupsMenu+1] = {
 					header = v.image.." ┇ " ..v.glassname,
-					txt = "Buy " .. v.glassname .. " For: " .. v.price .. "$",
+					txt = "Buy " .. v.glassname .. " For: " .. v.price .. "𝕍",
 					params = {
 						isServer = true,
 						event = "CL-Pizzeria:BuyGlass",
