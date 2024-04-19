@@ -700,17 +700,17 @@ Config.Items = {
     },
 
     DrinksMaker = {
+        -- [1] = {
+        --     ['drink'] = 'psprite',
+        --     ['drinkname'] = 'Sprite',
+        --     ['image'] = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979129312940797962/bsprite.png width=30px>",
+        -- }, 
         [1] = {
-            ['drink'] = 'psprite',
-            ['drinkname'] = 'Sprite',
-            ['image'] = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979129312940797962/bsprite.png width=30px>",
-        }, 
-        [2] = {
             ['drink'] = 'pcocacola',
             ['drinkname'] = 'CocaCola',
             ['image'] = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979129313280548936/bcocacola.png width=30px>",
         }, 
-        [3] = {
+        [2] = {
             ['drink'] = 'ppepper',
             ['drinkname'] = 'DR.Pepper',
             ['image'] = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979129313557352468/bpepper.png  width=30px>",
