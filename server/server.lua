@@ -260,14 +260,14 @@ RegisterNetEvent('CL-Pizzeria:AddThirst', function(amount)
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
     Player.Functions.SetThirst(amount)
-    TriggerClientEvent('hud:client:UpdateNeeds', source, Player.Functions.GetThirst(), amount)
+    TriggerClientEvent('hud:client:UpdateNeeds', source, Player.Functions.GetHunger(), amount)
 end)
 
 RegisterNetEvent('CL-Pizzeria:AddHunger', function(amount)
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
     Player.Functions.SetHunger(amount)
-    TriggerClientEvent('hud:client:UpdateNeeds', source, amount, Player.Functions.GetHunger())
+    TriggerClientEvent('hud:client:UpdateNeeds', source, amount, Player.Functions.GetThirst())
 end)
 
 QBCore.Functions.CreateCallback('CL-Pizzeria:HasItem', function(source, cb, item, amount)
