@@ -231,9 +231,8 @@ RegisterNetEvent("CL-Pizzeria:Drink", function(item, ischampagne, itemname, anim
 		}, {}, {}, function()
 			QBCore.Functions.Notify("You Have Drank " ..itemname, "success")
 			if Config.ConsumablesVersion == "old" then
-				TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + Config.Thirst["Champagne"])
 			elseif Config.ConsumablesVersion == "new" then
-				TriggerServerEvent("CL-Pizzeria:AddThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + Config.Thirst["Champagne"])
+				TriggerServerEvent("CL-Pizzeria:AddThirst", QBCore.Functions.GetPlayerData().condition.thirst + Config.Thirst["Champagne"])
 			end	
 			TriggerServerEvent("CL-Pizzeria:RemoveItem", item, 1)
 			AlcoholEffect()
@@ -258,9 +257,8 @@ RegisterNetEvent("CL-Pizzeria:Drink", function(item, ischampagne, itemname, anim
 		}, {}, function()
 			QBCore.Functions.Notify("You Have Drank " ..itemname, "success")
 			if Config.ConsumablesVersion == "old" then
-				TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + thirst)
 			elseif Config.ConsumablesVersion == "new" then
-				TriggerServerEvent("CL-Pizzeria:AddThirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + thirst)
+				TriggerServerEvent("CL-Pizzeria:AddThirst", QBCore.Functions.GetPlayerData().condition.thirst + thirst)
 			end
 			TriggerServerEvent("CL-Pizzeria:RemoveItem", item, 1)
 			drinked = drinked + 1
@@ -426,9 +424,8 @@ RegisterNetEvent("CL-Pizzeria:Eat", function(fruit, item, itemname, time, hunger
 			TriggerServerEvent("CL-Pizzeria:RemoveItem", item, 1)
 			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[item], "remove")
 			if Config.ConsumablesVersion == "old" then
-				TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
 			elseif Config.ConsumablesVersion == "new" then
-				TriggerServerEvent("CL-Pizzeria:AddHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
+				TriggerServerEvent("CL-Pizzeria:AddHunger", QBCore.Functions.GetPlayerData().condition.hunger + hunger)
 			end
 		end, function()
 			QBCore.Functions.Notify("Canceled...", "error")
@@ -448,9 +445,8 @@ RegisterNetEvent("CL-Pizzeria:Eat", function(fruit, item, itemname, time, hunger
 			TriggerServerEvent("CL-Pizzeria:RemoveItem", item, 1)
 			TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[item], "remove")
 			if Config.ConsumablesVersion == "old" then
-				TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
 			elseif Config.ConsumablesVersion == "new" then
-				TriggerServerEvent("CL-Pizzeria:AddHunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + hunger)
+				TriggerServerEvent("CL-Pizzeria:AddHunger", QBCore.Functions.GetPlayerData().condition.hunger + hunger)
 			end
 		end, function()
 			QBCore.Functions.Notify("Canceled...", "error")
