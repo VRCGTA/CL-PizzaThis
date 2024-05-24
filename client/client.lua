@@ -1746,7 +1746,7 @@ RegisterNetEvent("CL-Pizzeria:CookPizzaMenu", function()
 				}
 			}
 			CookPizzaMenu[#CookPizzaMenu+1] = {
-				header = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979344270425198612/pmushroomspizza.png width=30px> ".." ┇ Cook Pungi Pizza",
+				header = "<img src=https://cdn.discordapp.com/attachments/967914093396774942/979344270425198612/pmushroomspizza.png width=30px> ".." ┇ Cook Kinoko Pizza",
 				txt = "Ingredients: <br> - Pizza Base <br> - Butter <br> - Mozzarella <br> - Olive Oil <br> - Mushrooms",
 				params = {
 					event = "CL-Pizzeria:Make",
